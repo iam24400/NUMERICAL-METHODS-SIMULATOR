@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="1200.0" style="-fx-background-color: #C8C8C8;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.SceneController">
+   <children>
+      <VBox prefHeight="54.0" prefWidth="1200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <MenuBar prefHeight="26.0" prefWidth="239.0" style="-fx-background-color: #C8C8C8;">
+              <menus>
+                  <Menu mnemonicParsing="false" onAction="#sceneHome">
+                     <graphic>
+                        <Button mnemonicParsing="false" onAction="#sceneHome" style="-fx-background-color: #C8C8C8;" text="Home" textFill="#004aad">
+                           <font>
+                              <Font name="Bank Gothic Light BT" size="14.0" />
+                           </font>
+                        </Button>
+                     </graphic></Menu>
+              </menus>
+            </MenuBar>
+         </children>
+      </VBox>
+      <Label alignment="CENTER" layoutX="153.0" layoutY="74.0" prefHeight="54.0" prefWidth="754.0" text="Bisection" textAlignment="CENTER" textFill="#004aad">
+         <font>
+            <Font name="Bank Gothic Light BT" size="36.0" />
+         </font>
+      </Label>
+      <Text layoutX="184.0" layoutY="193.0" strokeType="OUTSIDE" strokeWidth="0.0" text="           The bisection method is a numerical root-finding algorithm that iteratively narrows down the interval containing a root of a continuous function. It starts with an initial interval where the function changes sign, indicating the presence of a root within that interval. By evaluating the function at the midpoint of the interval, the method determines which half of the interval contains the root. This process is repeated, successively halving the interval until the width of the interval becomes smaller than a predefined tolerance level. The bisection method is guaranteed to converge to a root because it continually reduces the size of the interval containing the root in each iteration. While the bisection method is relatively simple, its convergence is slow compared to other root-finding methods. However, it has the advantage of being robust and reliable, particularly for functions with complex behavior or multiple roots. Additionally, it doesn't require derivatives of the function, making it suitable for cases where analytical derivatives are difficult to obtain or compute. Despite its simplicity, the bisection method remains a fundamental tool in numerical analysis and serves as the basis for more advanced root-finding algorithms." textAlignment="JUSTIFY" wrappingWidth="853.3368682861328">
+         <font>
+            <Font name="Arial Unicode MS" size="14.0" />
+         </font>
+      </Text>
+      <Button layoutX="561.0" layoutY="471.8" mnemonicParsing="false" onAction="#sceneBisection" style="-fx-background-color: #004aad;" text="Continue" textFill="#c8c8c8">
+         <font>
+            <Font name="Bank Gothic Light BT" size="14.0" />
+         </font>
+      </Button>
+      <Label alignment="CENTER" layoutX="616.0" layoutY="73.0" prefHeight="54.0" prefWidth="186.0" text="Method" textAlignment="CENTER">
+         <font>
+            <Font name="Bank Gothic Light BT" size="36.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

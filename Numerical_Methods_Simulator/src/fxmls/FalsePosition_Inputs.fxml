@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="1200.0" style="-fx-background-color: #C8C8C8;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.FalsePositionController">
+   <children>
+      <VBox prefHeight="600.6" prefWidth="1200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <MenuBar prefHeight="16.0" prefWidth="239.0" style="-fx-background-color: #C8C8C8;">
+               <menus>
+                  <Menu mnemonicParsing="false">
+                     <graphic>
+                        <Button mnemonicParsing="false" onAction="#goHome2" style="-fx-background-color: #C8C8C8;" text="Home" textFill="#004aad">
+                           <font>
+                              <Font name="Bank Gothic Light BT" size="14.0" />
+                           </font>
+                        </Button>
+                     </graphic>
+                  </Menu>
+               </menus>
+            </MenuBar>
+         </children>
+      </VBox>
+      <TabPane layoutY="35.0" prefHeight="565.0" prefWidth="1200.0" style="-fx-background-color: #C8C8C8;" tabClosingPolicy="UNAVAILABLE">
+         <tabs>
+            <Tab text="Inputs">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextField fx:id="textField_A2" alignment="CENTER" layoutX="174.0" layoutY="90.0" prefHeight="26.0" prefWidth="102.0" promptText="A">
+                           <font>
+                              <Font name="Cambria Math" size="18.0" />
+                           </font>
+                        </TextField>
+                        <Text layoutX="281.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" text="x^3  +">
+                           <font>
+                              <Font name="Cambria Math" size="18.0" />
+                           </font>
+                        </Text>
+                        <TextField fx:id="textField_B2" alignment="CENTER" layoutX="343.0" layoutY="90.0" prefHeight="26.0" prefWidth="102.0" promptText="B">
+                           <font>
+                              <Font name="Cambria Math" size="18.0" />
+                           </font>
+                        </TextField>
+                        <Text layoutX="450.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" text="x ^2 +">
+                           <font>
+                              <Font name="Cambria Math" size="18.0" />
+                           </font>
+                        </Text>
+                        <TextField fx:id="textField_C2" alignment="CENTER" layoutX="508.0" layoutY="90.0" prefHeight="26.0" prefWidth="102.0" promptText="C">
+                           <font>
+                              <Font name="Cambria Math" size="18.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="textField_D2" alignment="CENTER" layoutX="657.0" layoutY="90.0" prefHeight="26.0" prefWidth="102.0" promptText="C">
+                           <font>
+                              <Font name="Cambria Math" size="18.0" />
+                           </font>
+                        </TextField>
+                        <Text layoutX="92.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" text="f (x)    =">
+                           <font>
+                              <Font name="Cambria Math" size="18.0" />
+                           </font>
+                        </Text>
+                        <TextField fx:id="textField_xL2" alignment="CENTER" layoutX="174.0" layoutY="152.0" prefHeight="26.0" prefWidth="102.0" promptText="xL">
+                           <font>
+                              <Font name="Cambria Math" size="18.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="textField_xU2" alignment="CENTER" layoutX="299.0" layoutY="152.0" prefHeight="26.0" prefWidth="102.0" promptText="xU">
+                           <font>
+                              <Font name="Cambria Math" size="18.0" />
+                           </font>
+                        </TextField>
+                        <Text layoutX="56.0" layoutY="173.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Initial points:">
+                           <font>
+                              <Font name="Cambria Math" size="18.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="99.0" layoutY="233.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Es:">
+                           <font>
+                              <Font name="Cambria Math" size="18.0" />
+                           </font>
+                        </Text>
+                        <TextField fx:id="textField_Es2" alignment="CENTER" layoutX="174.0" layoutY="212.0" prefHeight="26.0" prefWidth="102.0" promptText="0-100%">
+                           <font>
+                              <Font name="Cambria Math" size="18.0" />
+                           </font>
+                        </TextField>
+                        <Button layoutX="445.0" layoutY="359.0" mnemonicParsing="false" onAction="#confirmButton2" style="-fx-background-color: #004aad;" text="Confirm" textFill="#c8c8c8">
+                           <font>
+                              <Font name="Bank Gothic Light BT" size="14.0" />
+                           </font>
+                        </Button>
+                        <Label fx:id="label_fx2" layoutX="808.0" layoutY="85.0" prefHeight="46.0" prefWidth="359.0" textFill="#004aad">
+                           <font>
+                              <Font name="Cambria Math" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="label_xLU2" layoutX="808.0" layoutY="145.0" prefHeight="46.0" prefWidth="359.0" textFill="#004aad">
+                           <font>
+                              <Font name="Cambria Math" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="label_Es2" layoutX="808.0" layoutY="205.0" prefHeight="46.0" prefWidth="359.0" textFill="#004aad">
+                           <font>
+                              <Font name="Cambria Math" size="18.0" />
+                           </font>
+                        </Label>
+                        <Button layoutX="271.0" layoutY="359.0" mnemonicParsing="false" onAction="#falsepositionScene" prefHeight="28.0" prefWidth="78.0" style="-fx-background-color: #004aad;" text="Clear" textFill="#c8c8c8">
+                           <font>
+                              <Font name="Bank Gothic Light BT" size="14.0" />
+                           </font>
+                        </Button>
+                        <Label fx:id="label_string2" alignment="CENTER" layoutX="177.0" layoutY="280.0" prefHeight="46.0" prefWidth="496.0">
+                           <font>
+                              <Font name="Times New Roman Italic" size="14.0" />
+                           </font>
+                        </Label>
+                        <Button layoutX="162.0" layoutY="359.0" mnemonicParsing="false" onAction="#goBack2" prefHeight="28.0" prefWidth="83.0" style="-fx-background-color: #004aad;" text="Go Back" textFill="#c8c8c8">
+                           <font>
+                              <Font name="Bank Gothic Light BT" size="14.0" />
+                           </font>
+                        </Button>
+                        <Text layoutX="615.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" text="x  +">
+                           <font>
+                              <Font name="Cambria Math" size="18.0" />
+                           </font>
+                        </Text>
+                        <Label alignment="CENTER" layoutX="-197.0" layoutY="14.0" prefHeight="54.0" prefWidth="754.0" text="False Position" textAlignment="CENTER" textFill="#004aad">
+                           <font>
+                              <Font name="Bank Gothic Light BT" size="36.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="313.0" layoutY="14.0" prefHeight="54.0" prefWidth="186.0" text="Method" textAlignment="CENTER">
+                           <font>
+                              <Font name="Bank Gothic Light BT" size="36.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Table">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="198.0" prefWidth="231.0">
+                     <children>
+                        <TableView fx:id="table_Bisection2" layoutX="37.0" layoutY="36.0" prefHeight="463.0" prefWidth="1126.0">
+                           <columns>
+                              <TableColumn fx:id="column_Iteration2" prefWidth="80.79998779296875" text="Iteration" />
+                              <TableColumn fx:id="column_xL2" prefWidth="110.4000244140625" text="xL" />
+                              <TableColumn fx:id="column_xM2" prefWidth="107.20001220703125" text="xM" />
+                              <TableColumn fx:id="column_xU2" minWidth="0.0" prefWidth="98.39993286132812" text="xU" />
+                              <TableColumn fx:id="column_FxL2" prefWidth="151.20004272460938" text="f(xL)" />
+                              <TableColumn fx:id="column_FxM2" prefWidth="183.99993896484375" text="f(xM)" />
+                              <TableColumn fx:id="column_FxU2" prefWidth="175.99993896484375" text="f(xU)" />
+                              <TableColumn fx:id="column_Ea2" prefWidth="217.60009765625" text="Ea (%)" />
+                           </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+         </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
